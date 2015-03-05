@@ -8,14 +8,14 @@
      <div class="panel panel-success">
      <tr>
        <div class="panel-heading">
-         <p><strong><%= link_to blog_post.title, blog_post %></p>
+         <p><strong><%= link_to blog_post.title, blog_post %></strong></p>
        </div>
        <div class="panel-body">
-         <p>by <strong><%= blog_post.author %></p>
+         <p>by <strong><%= blog_post.user.username %></p>
          <p><%= blog_post.blog_entry[0..150]%>...[<%= link_to "READ MORE", blog_post%>]</p>
        </div>
        <div class="panel-footer">
-<!--           <%= link_to 'Show', blog_post, class: "btn btn-primary" %> -->
+<!--           <%#= link_to 'Show', blog_post, class: "btn btn-primary" %> -->
          <%= link_to 'Edit', edit_blog_post_path(blog_post),  class: "btn btn-warning"  %>
          <%= link_to 'Destroy', blog_post, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger"  %>
        </div>

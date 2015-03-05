@@ -13,3 +13,25 @@
  *= require_tree .
  *= require_self
  */
+.cant-see-me{
+
+display:none;
+
+}
+
+.right-side {
+
+    float:right;
+    display:block;
+}
+
+.container {
+
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right, margin-left: auto; 
+    border-radius: 15px;
+    background-color: #336699;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
